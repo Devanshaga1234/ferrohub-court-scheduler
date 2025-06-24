@@ -1,9 +1,8 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { MapPin, Clock, Phone, Mail, Directions } from 'lucide-react';
+import { MapPin, Clock, Phone, Mail, Navigation } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const LocationsPage = () => {
@@ -98,7 +97,7 @@ const LocationsPage = () => {
                 </div>
 
                 <div className="flex items-start space-x-2">
-                  <Directions className="w-4 h-4 text-green-600 mt-0.5" />
+                  <Navigation className="w-4 h-4 text-green-600 mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-sm">Directions</h4>
                     <p className="text-sm text-gray-600">{location.directions}</p>
